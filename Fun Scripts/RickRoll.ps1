@@ -1,5 +1,18 @@
 <#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 7/31/2017
+
+DESCRIPTION:
 Plays the RickRoll
+
+USAGE:
+.\RickRoll.ps1
+
+REQUIREMENTS:
+N/A
 #>
 
 for ($i = 0; $i -lt 100; $i ++) {

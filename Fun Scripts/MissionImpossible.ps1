@@ -1,5 +1,18 @@
 <#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 7/31/2017
+
+DESCRIPTION:
 Plays the Mission Impossible Theme
+
+USAGE:
+.\MissionImpossible.ps1
+
+REQUIREMENTS:
+N/A
 #>
 
 [console]::beep(784,150) 

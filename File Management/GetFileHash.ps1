@@ -1,7 +1,18 @@
 <#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 4/24/2017
+
+DESCRIPTION:
 Hashes all Child Objects in the specified Folder
-Examples:
+
+USAGE:
 .\GetFileHash.ps1 -Folder "C:\Reports" -CSV "C:\ReportsHash.csv"
+
+REQUIREMENTS:
+N/A
 #>
 
 param (

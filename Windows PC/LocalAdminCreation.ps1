@@ -1,17 +1,26 @@
 <#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 4/25/2017
+
+DESCRIPTION:
 Creates Local Admin Account
-Examples:
-.\LocalAdminAccountCreation.ps1 -computername PC1 -username User -password Password -desc "Description"
-.\LocalAdminAccountCreation.ps1 -username User -password Password -desc "Description"
+
+USAGE:
+.\LocalAdminCreation.ps1 -username <USER to Create> -password "<Password>" -desc "<Description>"
+
+REQUIREMENTS:
+N/A
 #>
 
 param (
-	[string]$computername = $($env:computername),
+	[string]$computername = $env:computername,
 	[Parameter(Mandatory=$true)][string]$username,
-	[Parameter(Mandatory=$true)][string]$password,
-	[Parameter(Mandatory=$true)][string]$desc
+	[Parameter(Mandatory=$true)][string]$desc,
+	[Parameter(Mandatory=$true)][string]$password
 )
-
 
 $computer = [ADSI]"WinNT://$computername,computer"
 $user = $computer.Create("user", $username)

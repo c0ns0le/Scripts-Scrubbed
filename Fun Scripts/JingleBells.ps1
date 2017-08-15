@@ -1,5 +1,18 @@
 <#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 7/31/2017
+
+DESCRIPTION:
 Plays Jingle Bells
+
+USAGE:
+.\JingleBells.ps1
+
+REQUIREMENTS:
+N/A
 #>
 
 $notes = write-output `

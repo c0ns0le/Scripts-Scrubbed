@@ -1,5 +1,18 @@
 <#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 7/31/2017
+
+DESCRIPTION:
 Plays the Tetris Theme
+
+USAGE:
+.\Tetris.ps1
+
+REQUIREMENTS:
+N/A
 #>
 
 [Console]::Beep(658, 125)

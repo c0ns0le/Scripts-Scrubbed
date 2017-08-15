@@ -1,5 +1,18 @@
 <#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 7/31/2017
+
+DESCRIPTION:
 Plays the Star Wars Imperial March
+
+USAGE:
+.\ImperialMarch.ps1
+
+REQUIREMENTS:
+N/A
 #>
 
 [console]::beep(440,500)

@@ -1,0 +1,79 @@
+<#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 7/31/2017
+
+DESCRIPTION:
+Queries a Source AD Group and adds its members to the Target AD Group
+
+USAGE:
+.\ADGroupMove.ps1 -ADSourceGroup "Groupname" -ADTargetGroup "Groupname"
+
+REQUIREMENTS:
+ - AD Powershell Cmdlets
+ - At least Account Operator Credentials
+#>
+param (
+    [Parameter(Mandatory=$true)][string]$ADSourceGroup = $( Read-Host "Input AD Source Group, please" ),
+    [Parameter(Mandatory=$true)][string]$ADTargetGroup = $( Read-Host "Input AD Taregt Group, please" )
+)
+
+$ADQuery=Get-ADGroupMember -Identity $ADSourceGroup -recursive | get-aduser -Properties * | Select-Object -ExpandProperty samaccountname
+
+foreach($user in $ADQuery)
+{
+Add-ADGroupMember -Identity $ADTargetGroup -Members $user
+}
+
+
+
+
+
+# SIG # Begin signature block
+# MIIIHQYJKoZIhvcNAQcCoIIIDjCCCAoCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
+# gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
+# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQU+M7O+zyjK6rjtsTAwvNpRROj
+# MlSgggWMMIIFiDCCBHCgAwIBAgITGQAAAG4MNHo+G+UdqQAAAAAAbjANBgkqhkiG
+# 9w0BAQsFADBDMRMwEQYKCZImiZPyLGQBGRYDY29tMRcwFQYKCZImiZPyLGQBGRYH
+# dmVjdHJvbjETMBEGA1UEAxMKVmVjdHJvbi1DQTAeFw0xNzA3MjgxNzE3MDdaFw0x
+# ODA3MjgxNzE3MDdaMG4xEzARBgoJkiaJk/IsZAEZFgNjb20xFzAVBgoJkiaJk/Is
+# ZAEZFgd2ZWN0cm9uMRAwDgYDVQQLEwdNdEhvbGx5MRIwEAYDVQQLEwlNSFMgVXNl
+# cnMxGDAWBgNVBAMTD1JvdGhlcjIsIEphcnJvZDCCASIwDQYJKoZIhvcNAQEBBQAD
+# ggEPADCCAQoCggEBALLPcIZQduhhYHyRzW8i/HKKqd49txXEVnqwgimd7sMVBeud
+# mxAfPvNmrx6OTEMuZz2DTgy8904uoJdRDyIZwpyIr1OQ7BNkaZ6jlD0+/Eo1Qkdz
+# 5XpbsjjW3KvMO3BUKU3ILDP28yBZvKlvuOPUUz9v2ysgqeRdmBSDLzKHbVXoho5b
+# +h9VBk6e8mAWXu94E9kxWf8u4Y6b6a4xZKfekvqNcOMPk/12f0sklB5j1C/AVlEy
+# Iyq6Q7mxnJ2uYfrZB+wRnB7HSKBwIWx+1MSQhaRgQ1xonKPaeXaQmiEcQAOrdsC5
+# k70uiOpueeKXUFeuE6uBivaL3SsvIvsnPUdsc6UCAwEAAaOCAkgwggJEMCUGCSsG
+# AQQBgjcUAgQYHhYAQwBvAGQAZQBTAGkAZwBuAGkAbgBnMBMGA1UdJQQMMAoGCCsG
+# AQUFBwMDMA4GA1UdDwEB/wQEAwIHgDAdBgNVHQ4EFgQUnWTsGC+YthFXTAsuiAB/
+# 0mszNXQwHwYDVR0jBBgwFoAU8hAptChHGoGHOsSd50Th0HGKxx4wgcUGA1UdHwSB
+# vTCBujCBt6CBtKCBsYaBrmxkYXA6Ly8vQ049VmVjdHJvbi1DQSxDTj1WSUNBLENO
+# PUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1D
+# b25maWd1cmF0aW9uLERDPXZlY3Ryb24sREM9Y29tP2NlcnRpZmljYXRlUmV2b2Nh
+# dGlvbkxpc3Q/YmFzZT9vYmplY3RDbGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB
+# vAYIKwYBBQUHAQEEga8wgawwgakGCCsGAQUFBzAChoGcbGRhcDovLy9DTj1WZWN0
+# cm9uLUNBLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2
+# aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPXZlY3Ryb24sREM9Y29tP2NBQ2VydGlm
+# aWNhdGU/YmFzZT9vYmplY3RDbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MC8G
+# A1UdEQQoMCagJAYKKwYBBAGCNxQCA6AWDBRqcm90aGVyMkB2ZWN0cm9uLmNvbTAN
+# BgkqhkiG9w0BAQsFAAOCAQEATRx/US/i9sprjaOlIjxLt7SqREb126MGpcvYdHm3
+# 0UNmp6s0E7eZsPNPR8wZlOF0UiQP8O79/n5l7r9nZhPrj2i9rLIMMlVMtdI6THRR
+# 3XQvSQfTs2TV1qTSfheAviuNwhsegnch//UJjui9YhqxM0zG2eQZHa3ruKNtB81c
+# xv/CFYRD0J5Quf3pobLG0gC/EeDti3e2iHSoy4VV3efROBMeYZtvevr711kHGJ5B
+# rDZprzHA47iynuz8LaFC4KvUmUfI3tDmelZEMrP+8LOmRQJsQo2V1Jp0+2YhfHKO
+# NykHeH+2et0NMEiUWEqfqi3dIdGgocZKYJVMCqgScj2ezzGCAfswggH3AgEBMFow
+# QzETMBEGCgmSJomT8ixkARkWA2NvbTEXMBUGCgmSJomT8ixkARkWB3ZlY3Ryb24x
+# EzARBgNVBAMTClZlY3Ryb24tQ0ECExkAAABuDDR6PhvlHakAAAAAAG4wCQYFKw4D
+# AhoFAKB4MBgGCisGAQQBgjcCAQwxCjAIoAKAAKECgAAwGQYJKoZIhvcNAQkDMQwG
+# CisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEOMAwGCisGAQQBgjcCARUwIwYJKoZI
+# hvcNAQkEMRYEFOb050jQ2n9GVudJJ/1Xv4GV3zTfMA0GCSqGSIb3DQEBAQUABIIB
+# AJO7ecfDp31QqzxFCDwLSPVwsXuIvRml0qQ/v7jcEIDTILz3eCLylqam4+h9RU40
+# iskpVf1AJk6e8zj+r2OkLwQlaUmPHABuNh3NWqcgbVlDoB5Wsga1QbTh5gOxsscp
+# cHXiitcPYOguVu7ZfMr26N5G1nTmymUVhgnDbE7CEX6SYs2gIaEnXaUWHx1KdjKw
+# KKuByke8nPlYGj9Dmx6AYxGu+kySGAzLuN0Lk1JYUp8kkg3+DNLhzirjx/RGo/4y
+# 0pPvwx8pEtRCh00mcBtvjNwWhR6ejrulpqKozf7P/4pthauQwQg1KGpN/Fzc7zsI
+# 48m9MPVdUfPh4dYHH9RlJPE=
+# SIG # End signature block

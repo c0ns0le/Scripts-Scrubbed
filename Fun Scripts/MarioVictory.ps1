@@ -1,5 +1,18 @@
 <#
+AUTHOR:
+Jarrod Rother
+
+CHANGELOG:
+Created - 7/31/2017
+
+DESCRIPTION:
 Plays the Mario Victory Theme
+
+USAGE:
+.\MarioVictory.ps1
+
+REQUIREMENTS:
+N/A
 #>
 
 [Console]::Beep(130, 100)
