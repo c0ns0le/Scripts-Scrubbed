@@ -9,7 +9,7 @@ DESCRIPTION:
 Changes Mailbox type to Room
 
 USAGE:
-.\ConverttoRoomMailbox.ps1 -Mailbox ConfRoom1
+.\Set-RoomMailbox.ps1 -Mailbox ConfRoom1
 
 REQUIREMENTS:
  - Exchange Management Shell

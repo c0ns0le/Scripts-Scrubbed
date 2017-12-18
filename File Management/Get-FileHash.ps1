@@ -9,7 +9,7 @@ DESCRIPTION:
 Hashes all Child Objects in the specified Folder
 
 USAGE:
-.\GetFileHash.ps1 -Folder "C:\Reports" -CSV "C:\ReportsHash.csv"
+.\Get-FileHash.ps1 -Folder "C:\Reports" -CSV "C:\ReportsHash.csv"
 
 REQUIREMENTS:
 N/A

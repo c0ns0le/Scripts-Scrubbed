@@ -9,8 +9,8 @@ DESCRIPTION:
 Enables or Disables CBT for a particular VM
 
 USAGE:
-.\SetCBT.ps1 -CBTEnabled "$false"
-.\SetCBT.ps1 -CBTEnabled "$true"
+.\Set-VMCBT.ps1 -CBTEnabled "$false"
+.\Set-VMCBT.ps1 -CBTEnabled "$true"
 
 REQUIREMENTS:
  - VMware PowerCLI

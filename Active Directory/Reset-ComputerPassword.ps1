@@ -6,7 +6,7 @@ CHANGELOG:
 Created - 4/25/2017
 
 DESCRIPTION:
-Resets Local PC Password witha Domain Controller
+Resets Local PC Password with a Domain Controller
 
 USAGE:
 .\ResetPCPassword.ps1 -DC DC1.Domain.com

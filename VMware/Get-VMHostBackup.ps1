@@ -7,12 +7,13 @@ Created - 2/24/2015
 Modified - 12/7/2016
 Modified - 2/27/2017
 Modified - 8/1/2017
+Modified - 12/7/2017
 
 DESCRIPTION:
 Backs up VMware ESXi Host Config Bundles to specified location
 
 USAGE:
-.\HostBackup.ps1 -VMHosts <Host1,Host2> -User <Username> -Pass <Password> -Dest <Location to save File>
+.\Get-VMHostBackup.ps1 -VMHosts <Host1,Host2> -User <Username> -Pass <Password> -Dest <Location to save File>
 
 REQUIREMENTS:
  - VMware PowerCLI

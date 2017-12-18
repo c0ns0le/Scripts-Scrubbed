@@ -9,7 +9,7 @@ DESCRIPTION:
 Creates Local Admin Account
 
 USAGE:
-.\LocalAdminCreation.ps1 -username <USER to Create> -password "<Password>" -desc "<Description>"
+.\Create-LocalAdministrator.ps1 -username <USER to Create> -password "<Password>" -desc "<Description>"
 
 REQUIREMENTS:
 N/A

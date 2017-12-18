@@ -9,7 +9,7 @@ DESCRIPTION:
 Gets RSOP Data for the specified User and Computer
 
 USAGE:
-.\GetRSOP.ps1 -SveLoc C:\Reports\User.HTML -PCName PC1.Domain.Com -Username User1
+.\Get-RSOP.ps1 -SveLoc C:\Reports\User.HTML -PCName PC1.Domain.Com -Username User1
 
 REQUIREMENTS:
  - AD Powershell Cmdlets

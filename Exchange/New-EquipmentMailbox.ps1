@@ -9,7 +9,7 @@ DESCRIPTION:
 Creates a new Room Mailbox and sets it to automaticaly process requests
 
 USAGE:
-.\CreateEquipmentMailbox.ps1 -MBDB "MailboxDatabase 1" -NewMBName"EquipmentMailbox 1" -ADOU "OU=SubOU,DC=Domain,DC=com" -DN "EquipmentMailbox 1" -UPN "EquipmentMailbox-1@Doamion.com"
+.\New-EquipmentMailbox.ps1 -MBDB "MailboxDatabase 1" -NewMBName"EquipmentMailbox 1" -ADOU "OU=SubOU,DC=Domain,DC=com" -DN "EquipmentMailbox 1" -UPN "EquipmentMailbox-1@Doamion.com"
 
 REQUIREMENTS:
  - Exchange Management Shell

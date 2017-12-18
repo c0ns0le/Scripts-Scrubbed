@@ -9,7 +9,7 @@ DESCRIPTION:
 Restores Specified VMHost Configuration
 
 USAGE:
-.\HostRestore.ps1 -VMHost <Host> -User <Username> -Pass <Password> -SourceFile <Location of Backed up Config Bundle>
+.\Set-VMHostRestore.ps1 -VMHost <Host> -User <Username> -Pass <Password> -SourceFile <Location of Backed up Config Bundle>
 
 REQUIREMENTS:
  - VMware PowerCLI
