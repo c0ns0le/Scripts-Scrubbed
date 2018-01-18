@@ -9,7 +9,7 @@ DESCRIPTION:
 Plays the Mario Victory Theme
 
 USAGE:
-.\MarioVictory.ps1
+.\Invoke-MarioVictory.ps1
 
 REQUIREMENTS:
 N/A

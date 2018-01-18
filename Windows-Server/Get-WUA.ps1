@@ -16,10 +16,9 @@ Remote Administrator rights on specified PC's
 #>
 
 param (
-	[Parameter(Mandatory=$true)]$WUAPCs
+    [Parameter(Mandatory = $true)]$WUAPCs
 )
 
-ForEach($WUAPC in $WUAPCs)
-{
-(Get-ItemProperty -Path \\$WUAPC\C$\Windows\System32\wuaueng.dll).VersionInfo
+ForEach ($WUAPC in $WUAPCs) {
+    (Get-ItemProperty -Path \\$WUAPC\C$\Windows\System32\wuaueng.dll).VersionInfo
 }

@@ -9,7 +9,7 @@ DESCRIPTION:
 Creates Files with dates going back over the course of the test year selected
 
 USAGE:
-.\Create-TestFiles.ps1 -TestPath '<Path to Location for Test File Creation>' -TestYear '<Year to create for>'
+.\Create-TestFiles.ps1 -TestPath '<Path>' -TestYear '<Year>'
 
 REQUIREMENTS:
 N/A

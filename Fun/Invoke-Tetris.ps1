@@ -9,7 +9,7 @@ DESCRIPTION:
 Plays the Tetris Theme
 
 USAGE:
-.\Tetris.ps1
+.\Invoke-Tetris.ps1
 
 REQUIREMENTS:
 N/A

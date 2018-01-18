@@ -9,7 +9,7 @@ DESCRIPTION:
 Creates Named Monthly Directories in the Current Years Directory under the current Working Directory
 
 USAGE:
-.\Create-MonthDirectories.ps1
+.\New-MonthDirectories.ps1
 
 REQUIREMENTS:
 N/A

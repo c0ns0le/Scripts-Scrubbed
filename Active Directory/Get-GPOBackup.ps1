@@ -9,15 +9,15 @@ DESCRIPTION:
 Backs up all GPO's and saves them to the specified Folder
 
 USAGE:
-.\GPOBackup.ps1 -SveLoc C:\GPOExport\
+.\Get-GPOBackup.ps1 -SveLoc C:\GPOExport\
 
 REQUIREMENTS:
  - grouppolicy Powershell Cmdlets
 #>
 
 param (
-    [Parameter(Mandatory=$true)][string]$SveLoc,
-	[string]$date = $( get-date -format M.d.yyyy )
+    [Parameter(Mandatory = $true)][string]$SveLoc,
+    [string]$date = $( get-date -format M.d.yyyy )
 )
 
 

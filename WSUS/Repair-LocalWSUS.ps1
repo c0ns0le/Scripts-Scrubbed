@@ -9,7 +9,7 @@ DESCRIPTION:
 Resolves PC issues with reporting to WSUS when PC was created from a template or incorrectly sysprep'd. Cuase of the issue is duplicate SID information from machine in WSUS
 
 USAGE:
-.\Fix-LocalWSUS.ps1
+.\Repair-LocalWSUS.ps1
 
 REQUIREMENTS:
 N/A
