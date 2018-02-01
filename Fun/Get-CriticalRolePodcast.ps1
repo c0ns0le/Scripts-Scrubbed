@@ -59,10 +59,10 @@ Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/d9hckf/016_C
 
 ## Chapter 02
 Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/gkiqyg/017_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E017 - Hubris.mp3"
-Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/9jm99m/018_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E018 - Trial of the Take: Part 1.mp3"
-Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/szh55x/019_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E019 - Trial of the Take: Part 2.mp3"
-Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/5rvnwa/020_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E020 - Trial of the Take: Part 3.mp3"
-Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/j3am8u/021_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E021 - Trial of the Take: Part 4.mp3"
+Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/9jm99m/018_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E018 - Trial of the Take Part 1.mp3"
+Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/szh55x/019_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E019 - Trial of the Take Part 2.mp3"
+Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/5rvnwa/020_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E020 - Trial of the Take Part 3.mp3"
+Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/j3am8u/021_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E021 - Trial of the Take Part 4.mp3"
 Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/8z9rxf/022_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E022 - Aramente to Pyrah.mp3"
 Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/znctre/023_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign01\Chapter02\C01E023 - The Rematch.mp3"
 
