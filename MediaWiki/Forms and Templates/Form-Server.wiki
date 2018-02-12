@@ -1,0 +1,67 @@
+<noinclude>
+This is the "Server" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+
+{{#forminput:form=Server}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Server}}}
+{| class="formtable"
+! FQDN: 
+| {{{field|FQDN}}}
+|-
+! IP: 
+| {{{field|IP}}}
+|-
+! OS: 
+| {{{field|OS}}}
+|-
+! Apps: 
+| {{{field|Apps}}}
+|-
+! OrgResp: 
+| {{{field|OrgResp}}}
+|-
+! TechResp: 
+| {{{field|TechResp}}}
+|-
+! PhysLoc: 
+| {{{field|PhysLoc}}}
+|-
+! LogLoc: 
+| {{{field|LogLoc}}}
+|-
+! RegInfo: 
+| {{{field|RegInfo}}}
+|}
+{{{end template}}}
+
+==Applications==
+{{{section|Applications|level=2}}}
+
+==Network Adapter Information==
+{{{section|Network Adapter Information|level=2}}}
+
+==Local Users/Groups==
+{{{section|Local Users/Groups|level=2}}}
+
+==Scheduled Tasks==
+{{{section|Scheduled Tasks|level=2}}}
+
+==Current VMX File==
+{{{section|Current VMX File|level=2}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+</includeonly>

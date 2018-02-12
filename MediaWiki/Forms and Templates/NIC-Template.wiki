@@ -1,0 +1,35 @@
+<noinclude>
+This is the "NIC" template.
+It should be called in the following format:
+<pre>
+{{NIC
+|Type=
+|MAC Address=
+|IP Addresses=
+|Subnet Mask=
+|Default Gateway=
+|DNS Servers=
+|Primary WINS Server=
+|Secondary WINS Server=
+}}
+</pre>
+Edit the page to see the template text.
+</noinclude><includeonly>
+{| class="wikitable"
+| '''Type''' || {{{Type|}}}
+|-
+| '''MAC Address''' || {{{MAC Address|}}}
+|-
+| '''IP Addresses''' || {{{IP Addresses|}}}
+|-
+| '''Subnet Mask''' || {{{Subnet Mask|}}}
+|-
+| '''Default Gateway''' || {{{Default Gateway|}}}
+|-
+| '''DNS Servers''' || {{{DNS Servers|}}}
+|-
+| '''Primary WINS Server''' || {{{Primary WINS Server|}}}
+|-
+| '''Secondary WINS Server''' || {{{Secondary WINS Server|}}}
+|}
+</includeonly>

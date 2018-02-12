@@ -1,0 +1,64 @@
+<noinclude>
+This is the "Software" template.
+It should be called in the following format:
+<pre>
+{{Software
+|Image=
+|Link=
+|Website Username=
+|Website Password=
+|Support Contact=
+|Phone Number=
+|E-mail Address=
+|Internal Contact=
+|Internal Phone Number=
+|Internal E-mail Address=
+|Used For/Business Use=
+|Installation Media/Files=
+}}
+</pre>
+Edit the page to see the template text.
+</noinclude><includeonly>{| style="width: 30em; font-size: 90%; border: 1px solid #aaaaaa; background-color: #f9f9f9; color: black; margin-bottom: 0.5em; margin-left: 1em; padding: 0.2em; float: right; clear: right; text-align:left;"
+! style="text-align: center; background-color:#ccccff;" colspan="2" |<big>{{PAGENAME}}</big>
+|-
+! style="text-align: center;" colspan="2" {{!}} [[Image:{{{Image|}}}|250px]]
+|-
+| colspan="2" style="background-color:#ccccff;text-align: center;" {{!}} <big>Website</big>
+|-
+! Link || {{{Link|}}}
+|-
+! Username || {{{Website Username|}}}
+|-
+! Password || {{{Website Password|}}}
+|-
+| colspan="2" style="background-color:#ccccff;text-align: center;" {{!}} <big>Support Contact</big>
+|-
+! Name || {{{Support Contact|}}}
+|-
+! Phone Number
+| {{{Phone Number|}}}
+|-
+! E-mail Address
+| {{{E-mail Address|}}}
+|-
+| colspan="2" style="background-color:#ccccff;text-align: center;" {{!}} <big>Internal Contact</big>
+|-
+! Name || {{{Internal Contact|}}}
+|-
+! Phone Number
+| {{{Internal Phone Number|}}}
+|-
+! E-mail Address
+| {{{Internal E-mail Address|}}}
+|-
+| colspan="2" style="background-color:#ccccff;text-align: center;" {{!}} <big>Used For/Business Use</big>
+|-
+| colspan="2"|{{{Used For/Business Use|}}}
+|-
+| colspan="2" style="background-color:#ccccff;text-align: center;" {{!}} <big>Installation Media/Files</big>
+|-
+| colspan="2"|{{{Installation Media/Files|}}}
+|}
+
+[[Category:Software]]
+</includeonly>

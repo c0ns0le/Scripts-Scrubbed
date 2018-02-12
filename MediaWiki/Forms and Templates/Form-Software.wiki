@@ -1,0 +1,62 @@
+<noinclude>
+This is the "Software" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+
+{{#forminput:form=Software}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Software}}}
+{| class="formtable"
+! Image: 
+| {{{field|Image|uploadable}}}
+|-
+! Link:
+| {{{field|Link}}}
+|-
+! Website Username: 
+| {{{field|Website Username}}}
+|-
+! Website Password: 
+| {{{field|Website Password}}}
+|-
+! Support Contact: 
+| {{{field|Support Contact}}}
+|-
+! Phone Number: 
+| {{{field|Phone Number}}}
+|-
+! E-mail Address: 
+| {{{field|E-mail Address}}}
+|-
+! Internal Contact: 
+| {{{field|Internal Contact}}}
+|-
+! Internal Phone Number: 
+| {{{field|Internal Phone Number}}}
+|-
+! Internal E-mail Address: 
+| {{{field|Internal E-mail Address}}}
+|-
+! Used For/Business Use: 
+| {{{field|Used For/Business Use}}}
+|-
+! Installation Media/Files: 
+| {{{field|Installation Media/Files}}}
+|-
+|}
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+</includeonly>
