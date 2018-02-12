@@ -1,1 +1,1 @@
-This is a Repository for various usefule Scripts written by me or found online
+This is a Repository for various useful Scripts written by me or found online
