@@ -16,9 +16,9 @@ REQUIREMENTS:
 #>
 
 param (
-	[Parameter(Mandatory=$true)][string]$SveLoc,
-	[Parameter(Mandatory=$true)][string]$PCName,
-	[Parameter(Mandatory=$true)][string]$Username
+    [Parameter(Mandatory = $true)][string]$SveLoc,
+    [Parameter(Mandatory = $true)][string]$PCName,
+    [Parameter(Mandatory = $true)][string]$Username
 )
 
-Get-GPResultantSetofPolicy -Path $SveLoc -ReportType Html -Computer $PCName  -User $Username
+Get-GPResultantSetofPolicy -Path $SveLoc -ReportType Html -Computer $PCName -User $Username
