@@ -176,3 +176,4 @@ Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/6tvk99/2001_
 Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/upiptg/2002_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign02\Chapter01\C01E002 - A Show of Scrutiny.mp3"
 Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/4xji55/2003_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign02\Chapter01\C01E003 - The Midnight Chase.mp3"
 Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/h9k8ak/2004_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign02\Chapter01\C01E004 - Disparate Pieces.mp3"
+Invoke-WebRequest -Uri https://criticalrole.podbean.com/mf/download/fuby37/2005_CR_podcast_44_128.mp3 -OutFile "$OutPath\Campaign02\Chapter01\C01E005 - The Open Road.mp3
