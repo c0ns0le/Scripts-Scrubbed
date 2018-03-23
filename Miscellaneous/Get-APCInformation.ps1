@@ -40,7 +40,7 @@ foreach ($APCConfigFile in $APCConfigFiles) {
     $APCSystemIP = $APCSystemIP -replace 'SystemIP=' , ''
     $APCSubnetMask = $APCFile | Select-String 'SubnetMask'
     $APCSubnetMask = $APCSubnetMask -replace 'SubnetMask=' , ''
-    $APCDefaultGateway = $APCFile | Select-String 'DefaultGateway'
+    $APCDefaultGateway = $APCFile | Select-String '^DefaultGateway'
     $APCDefaultGateway = $APCDefaultGateway -replace 'DefaultGateway=' , ''
     $APCDomainName = $APCFile | Select-String 'DomainName'
     $APCDomainName = $APCDomainName -replace 'DomainName=' , ''
@@ -85,7 +85,7 @@ foreach ($APCConfigFile in $APCConfigFiles) {
     $Row | Add-Member -type NoteProperty -Name 'NTP Primary Server' -Value $APCNTPPrimaryServer
     $Row | Add-Member -type NoteProperty -Name 'NTP Secondary Server' -Value $APCNTPSecondaryServer
 
-    $Results += $Row    
+    $Results += $Row
 }
 
 $Results | Export-Csv -Path $ReportPath\APCReport.csv
