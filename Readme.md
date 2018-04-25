@@ -1,1 +1,1 @@
-This is a Repository for various useful Scripts written by me or found online
+This is a Repository for various useful Scripts and snippets written by me. There are some items such as the GoPhish Templates that I copied from other locations.
