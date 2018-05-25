@@ -32,6 +32,7 @@ foreach ($IPAddress in $IPAddresses) {
     $Row | Add-Member -type NoteProperty -Name 'TTL' -Value $DNSResolution.TTL
     $Row | Add-Member -type NoteProperty -Name 'RecordName' -Value $DNSResolution.Name
     $Row | Add-Member -type NoteProperty -Name 'Online' -Value $ConnectionTest
+    $Row | Add-Member -type NoteProperty -Name 'DNS IPAddress' -Value $DNSResolution.IPAddress
     $Results += $Row    
 }
 
